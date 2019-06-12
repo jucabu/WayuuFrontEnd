@@ -1,30 +1,24 @@
-# WayuuFrontEnd
+# WayuuBackend
+Software para gestion de Escuelas Deportivas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
+# Our team :colombia:
 
-## Development server
+*Name* | *Rol*
+------------ | -------------
+@hugohr1 | _Fullstack dev_
+@jucabu | _Fullstack dev & Enviroment admin_
+@ask098 | _Fullstack dev_
+@miguelangel45 | _Fullstack dev_
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+##Our sumary
+> _Do our best and learn everyday_ :shipit:
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-### Sketch for adobe.
-To see the sketch click [here](https://xd.adobe.com/view/57db5a67-feea-4bd2-52b0-9ef1dcddbf11-21ea/)
+#### To add our repository
+```
+git init
+git clone https://github.com/hugohr1/WayuuBackend.git
+git add .
+git commit -m ""
+```
+#### Our procces and guide
+[here](https://docs.google.com/document/d/1XXaU3OnZXUbz9IHpn6URh_sIe1dLC2zySlcVJ_MM4Bw/edit?usp=sharing)
