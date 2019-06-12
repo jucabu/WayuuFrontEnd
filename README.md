@@ -16,7 +16,7 @@ Software para gestion de Escuelas Deportivas
 #### To add our repository
 ```
 git init
-git clone https://github.com/hugohr1/WayuuBackend.git
+git clone https://github.com/jucabu/WayuuFrontEnd.git
 git add .
 git commit -m ""
 ```
