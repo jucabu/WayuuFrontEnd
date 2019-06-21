@@ -1,0 +1,11 @@
+.formulario {
+  background-color: whitesmoke;
+}
+
+.imagen {
+  background-image: url("../../assets/images/login-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(22, 85, 116, 0.5);
+  color: white;
+}
