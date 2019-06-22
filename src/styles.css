@@ -7,3 +7,7 @@ html, body, app-root{
 app-login, app-register{
   height: 97%;
 }
+
+button:focus{
+  outline: none !important;
+}

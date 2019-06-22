@@ -1,18 +1,22 @@
-<mat-toolbar class="navbar navbar-expand-lg navbar-dark p-2" color="primary">
-    <a class="navbar-brand" href="#" mat-button>Wayuu</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="assets/images/logo.JPG" width="100" height="40" alt="">
+    </a>
+  </nav>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" (click)="openToolbar()" mat-button>
+    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01" [ngClass]="{show: showToolbar}">
-    
-      <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#" mat-button>Home </a>
-          <a class="nav-item nav-link" href="#" mat-button>Features</a>
-          <a class="nav-item nav-link" href="#" mat-button>Pricing</a>
-          
-        </div>
-    
-  </div>
-</mat-toolbar>
+  <mat-toolbar-row class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <div class="navbar-nav mr-auto">
+      <button class="nav-item mr-2" mat-button color="primary">Basic</button>
+      <input class="form-control mr-2" type="search" placeholder="Buscar" style="max-width: 800px; min-width: 350px;">
+    </div>
+    <div class="navbar-nav ml-auto">
+        <button class="nav-item mr-4" mat-stroked-button color="primary">Enseña con Wayuu</button>
+        <button class="nav-item mr-2" mat-stroked-button color="accent">Inicia Sesion</button>
+        <button class="nav-item mr-2" mat-raised-button color="warn">Registrarse</button>
+    </div>
+  </mat-toolbar-row >
+</nav>
