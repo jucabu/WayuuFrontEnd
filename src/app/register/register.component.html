@@ -1,0 +1,38 @@
+<div fxLayout="column" fxLayoutAlign="center stretch" class="formulario" fxFlex="30">
+  <form #loginForm="ngForm">
+    <div fxLayout="row" fxLayoutAlign="center stretch">
+      <img src="../../assets/images/58832_300x300.jpg" width="30%" alt="">
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center stretch">
+      <mat-form-field appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input matInput type="name" name="name" #name="ngModel" [(ngModel)]="register.name">
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center stretch">
+      <mat-form-field appearance="outline">
+        <mat-label>Correo electrónico</mat-label>
+        <input matInput type="email" name="user" #user="ngModel" [(ngModel)]="register.email">
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center stretch">
+      <mat-form-field appearance="outline">
+        <mat-label>Contraseña</mat-label>
+        <input matInput type="text" name="password" #password="ngModel" [(ngModel)]="register.Password">
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center stretch">
+      <mat-checkbox [(ngModel)]="register.privacy_politics">
+        <a href="">Acepto política de privacidad de datos</a>
+      </mat-checkbox>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center stretch">
+      <button mat-raised-button color="primary">Regístrate</button>
+    </div>
+  </form>
+</div>
+<div fxLayout="column" fxLayoutAlign="space-around start" class="imagen" fxFlex="70">
+  <div fxLayout="row" fxLayoutAlign="space-around">
+    <div fxLayout="column" fxLayoutAlign=" stretch" fxFlex="80" fxFlexOffset="20"></div>
+  </div>
+</div>

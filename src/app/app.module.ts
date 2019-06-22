@@ -11,13 +11,16 @@ import { LoginComponent } from './login/login.component';
 import {AppRoutingModule} from './app-routing.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {FormsModule} from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
+import {MatCheckboxModule} from "@angular/material";
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import {FormsModule} from '@angular/forms';
     FlexLayoutModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

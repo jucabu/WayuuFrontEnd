@@ -3,9 +3,9 @@
 }
 
 .imagen {
-  background-image: url("/../../assets/images/login-background.png");
+  background-image: url("../../assets/images/register-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(25, 118, 210, 0.5);
+  box-shadow: inset 0 0 0 1000px rgba(0, 200, 83, 0.5);
   color: white;
 }

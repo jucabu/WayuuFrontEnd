@@ -4,6 +4,6 @@
 html, body, app-root{
   height: 100% !important
 }
-app-login{
+app-login, app-register{
   height: 97%;
 }
