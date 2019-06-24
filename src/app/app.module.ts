@@ -1,18 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './shared/material.module';
+import { AppRoutingModule } from './core/app-routing.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule} from './shared/material.module';
 import { LayoutComponent } from './layout/layout.component';
 import { LoginComponent } from './login/login.component';
-import {AppRoutingModule} from './app-routing.module';
-import {FlexLayoutModule} from '@angular/flex-layout';
-import {FormsModule} from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
-import {MatCheckboxModule} from "@angular/material";
-import { NavbarComponent } from './layout/navbar/navbar.component';
+import { HomeComponent } from './views/home/home.component';
+import { NavigationComponent } from './layout/navigation/navigation.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { InfoComponent } from './views/info/info.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
     LayoutComponent,
     LoginComponent,
     RegisterComponent,
-    NavbarComponent
+    HomeComponent,
+    NavigationComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,7 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    MatCheckboxModule
+    LayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

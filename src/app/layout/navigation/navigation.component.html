@@ -1,0 +1,57 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [ngClass]="{'hidden': !(isHandset$ | async)}"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#">
+        <mat-form-field>
+          <mat-label>Deportes</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let sport of sports" [value]="sport.value">
+              {{sport.value}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </a>
+      <a mat-list-item [routerLink]="['/info']">Enseña con wayuu</a>
+      <a mat-list-item [routerLink]="['/login']">Iniciar</a>
+      <a mat-list-item [routerLink]="['/register']">Registrate</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        <img src="assets/images/logo.JPG" height="40" width="100" alt="">
+      </button>
+      <mat-toolbar-row [ngClass]="{'hidden': (isHandset$ | async)}">
+        <img src="assets/images/logo.JPG" height="40" width="100" alt="">
+        <mat-form-field class="mx-5">
+          <mat-label>Deportes</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let sport of sports" [value]="sport.value">
+              {{sport.value}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Buscar" value="">
+        </mat-form-field>
+        <div class="ml-auto">
+          <a mat-button class="mr-1" color="primary" [routerLink]="['/info']">Enseña con wayuu</a>
+          <a mat-stroked-button class="mr-1" color="primary" [routerLink]="['/login']">Iniciar</a>
+          <a mat-raised-button class="mr-1" color="primary" [routerLink]="['/register']">Registrate</a>
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <ng-content></ng-content>
+    <footer>
+      <div class="col h-100 d-flex justify-content-center">
+        <small>Copyright © Your Website 2019</small>
+      </div>
+    </footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
