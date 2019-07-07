@@ -1,0 +1,48 @@
+mat-grid-tile {
+  background: lightblue;
+    box-sizing: inherit;
+    border-color: none;
+  }
+
+  .grid {
+       margin: 80px;
+  }
+
+  .title {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #539AE1;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .card {
+      background-color: #FFFFFF;
+  }
+
+  /* The hero image */
+  .heroHome {
+
+  /* Position and center the image to scale nicely on all screens */
+  background-color: #1976D2;
+  text-align: center;
+  position: static;
+  padding: 0px 30px;
+  color: white;
+}
+
+.text1{
+  background: lightblue;
+    box-sizing: inherit;
+    border-color: none;
+    background-color: #1976D2;
+    text-align: left;
+  }
+
+  .text2{
+    background: lightblue;
+      box-sizing: inherit;
+      border-color: none;
+      background-color: #1976D2;
+      text-align: right;
+    }

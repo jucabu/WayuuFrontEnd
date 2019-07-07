@@ -1,0 +1,53 @@
+ /* .lander needed to position the button. Adjust the width as needed */
+ .lander {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Make the image responsive */
+  .lander img {
+    width: 100%;
+    height: auto;
+  }
+  @media screen and (max-width:1020px) {  
+    .lander .btn {
+      display: none;
+    }
+    .heroHome{
+        display: none;
+    }
+  }
+  
+  
+  /* Style the button and place it in the middle of the lander/image */
+  .lander .btn {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    /*transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);*/
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 16px;
+    padding: 5px 100px;
+    border: 5px;
+    cursor: pointer;
+    border-radius: 7px;
+  }
+  
+  .lander .btn:hover {
+    background-color: #1976D2;
+  } 
+
+
+/* The hero image */
+.heroHome {
+
+  /* Position and center the image to scale nicely on all screens */
+  background-color: #1976D2;
+  text-align: center;
+  position: static;
+  padding: 0px 30px;
+  color: white;
+}
+

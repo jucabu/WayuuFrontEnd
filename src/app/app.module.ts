@@ -15,6 +15,10 @@ import { HomeComponent } from './views/home/home.component';
 import { NavigationComponent } from './layout/navigation/navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { InfoComponent } from './views/info/info.component';
+import { HomeHeadComponent } from './home-head/home-head.component';
+import { GridSchoolsComponent } from './grid-schools/grid-schools.component';
+import { MatCardModule } from '@angular/material';
+import { GridOportunitiesComponent } from './grid-oportunities/grid-oportunities.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,10 @@ import { InfoComponent } from './views/info/info.component';
     RegisterComponent,
     HomeComponent,
     NavigationComponent,
-    InfoComponent
+    InfoComponent,
+    HomeHeadComponent,
+    GridSchoolsComponent,
+    GridOportunitiesComponent,
   ],
   imports: [
     BrowserModule,
