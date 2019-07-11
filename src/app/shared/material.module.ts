@@ -32,6 +32,7 @@ import {
     MatSelectModule,
     MatCheckboxModule, MatSidenavModule, MatIconModule,
     MatGridListModule,
+    MatCardModule,
   ]
 })
 export class MaterialModule {

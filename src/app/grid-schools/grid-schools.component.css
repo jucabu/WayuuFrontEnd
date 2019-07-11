@@ -1,11 +1,14 @@
 mat-grid-tile {
     background: lightblue;
     box-sizing: inherit;
-    border-color: none;
+    /* border-color: none; */
+    border: none;
   }
 
   .grid {
        margin: 80px;
+       
+
   }
 
   .title {
@@ -18,4 +21,5 @@ mat-grid-tile {
 
   .card {
       background-color: #FFFFFF;
+      /* margin- add margin between cards, first rigth and third left*/
   }

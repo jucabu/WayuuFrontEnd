@@ -15,5 +15,5 @@ export class GridSchoolsComponent implements OnInit {
 
 }
 
-export class GridListOverviewExample {}
-export class CardOverviewExample {}
+// export class GridListOverviewExample {}
+// export class CardOverviewExample {}
