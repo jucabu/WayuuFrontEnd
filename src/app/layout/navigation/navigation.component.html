@@ -24,10 +24,10 @@
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-        <img src="assets/images/logo.JPG" height="40" width="100" alt="">
+        <img src="assets/images/logo.png" height="40" width="100" alt="">
       </button>
       <mat-toolbar-row [ngClass]="{'hidden': (isHandset$ | async)}">
-        <img src="assets/images/logo.JPG" height="40" width="100" alt="">
+        <img src="assets/images/logo.png" height="40" width="100" alt="">
         <mat-form-field class="mx-5">
           <mat-label>Deportes</mat-label>
           <mat-select>
