@@ -1,9 +1,14 @@
 
 mat-grid-tile {
-    background: lightblue;
+    background: rgb(255, 255, 255);
     box-sizing: inherit;
     border: none;
     
+  }
+
+  mat-grid-list{
+
+    background-color: transparent;
   }
  
   .mat-card-header {
@@ -12,6 +17,7 @@ mat-grid-tile {
 
   .grid {
        margin: 80px;
+       background-color: transparent;
   }
 
   .title {
