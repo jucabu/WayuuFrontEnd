@@ -24,6 +24,7 @@ mat-grid-tile {
   .heroHome {
 
   /* Position and center the image to scale nicely on all screens */
+  
   background-color: #1976D2;
   text-align: center;
   position: static;
